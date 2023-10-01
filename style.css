@@ -3,4 +3,10 @@ body {
 }
 body p {
   color: rgb(255, 38, 0);
+}
+
+font {
+  family: Helvetica, sans-serif;
+  size: 18px;
+  weight: bold;
 }/*# sourceMappingURL=style.css.map */
