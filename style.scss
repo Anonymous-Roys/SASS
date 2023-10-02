@@ -1,7 +1,10 @@
-$bg_color: rgba(0, 183, 255, 0.425);
+$bg_color: rgba(0, 183, 255, 0.199);
 
 body{
     background: $bg_color;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     p{
         color: rgb(255, 38, 0);
     }
@@ -11,4 +14,31 @@ font{
     family: Helvetica, sans-serif;
     size: 18px;
     weight: bold;
+}
+
+#whole{    
+    #header{
+        z-index: 7;
+        background: rgba(34, 34, 34, 0.226);
+        padding: 10px;
+        width: 100%;
+        
+      
+        nav{
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+        }
+
+    }
+
+    #content-container{
+        display: grid;
+        grid-template-columns: 20% 78%;
+
+        #side{
+            background-color: rgba(68, 90, 216, 0.205);
+            height: 100vh;
+        }
+    }
 }
