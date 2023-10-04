@@ -5,6 +5,10 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: url(./images/pebbles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
     p{
         color: rgb(255, 38, 0);
     }
@@ -34,11 +38,16 @@ font{
 
     #content-container{
         display: grid;
-        grid-template-columns: 20% 78%;
-
-        #side{
-            background-color: rgba(68, 90, 216, 0.205);
-            height: 100vh;
+        grid-template-columns: auto;
+        margin: 5rem 15rem;
+        #content{
+            background-color: antiquewhite;
+            padding: 4rem;
+            border-radius: 1rem;
+            .btn{
+                border-radius
+            }
         }
+
     }
 }
