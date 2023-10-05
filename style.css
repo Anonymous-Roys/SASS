@@ -21,7 +21,7 @@ font {
 #whole #header {
   z-index: 7;
   background: rgba(34, 34, 34, 0.226);
-  padding: 10px;
+  padding: 15px;
   width: 100%;
 }
 #whole #header nav {
@@ -35,6 +35,16 @@ font {
 }
 #whole #content-container #content {
   background-color: antiquewhite;
-  padding: 4rem;
+  padding: 3rem;
   border-radius: 1rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+#whole #content-container #content .btn {
+  border-radius: 1.4rem;
+  padding: 0.9rem;
+  background-color: aqua;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
