@@ -1,3 +1,5 @@
+@import "navbar";
+
 $bg_color: rgba(0, 183, 255, 0.199);
 
 body{
@@ -9,6 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    box-sizing: border-box;
     p{
         color: rgb(255, 38, 0);
     }
@@ -20,32 +23,21 @@ font{
     weight: bold;
 }
 
-#whole{    
-    #header{
-        z-index: 7;
-        background: rgba(34, 34, 34, 0.226);
-        padding: 15px;
-        width: 100%;
-        
-      
-        nav{
-            display: grid;
-            grid-template-columns: auto auto auto;
-
-        }
-
-    }
+#whole{ 
+     
+    
 
     #content-container{
-        display: grid;
-        grid-template-columns: auto;
-        margin: 5rem 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 1rem;
         
         #content{
             background-color: antiquewhite;
             padding: 3rem;
             border-radius: 1rem;
-            max-width: fit-content;
+            // max-width: fit-content;
 
             .btn{
                 border-radius: 1.4rem;
