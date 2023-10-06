@@ -28,23 +28,36 @@ font{
     
 
     #content-container{
+        z-index: 4;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 5rem 1rem;
+         margin: 1rem 1rem;
+         flex-wrap: wrap;
         
-        #content{
-            background-color: antiquewhite;
+        #content1{
+                    margin: 5rem 0.5rem;
+                    box-shadow: 9px 9px 7px #0f0f0f;
+                    max-width: fit-content;
+                    background-color: antiquewhite;
+                    border-radius: 1rem;
+            background-color: linear-gradient(to bottom, red, transparent);
             padding: 3rem;
-            border-radius: 1rem;
-            // max-width: fit-content;
+            
+            
 
             .btn{
                 border-radius: 1.4rem;
                 padding: 0.9rem;
-                background-color: aqua;
+                background-color: rgba(0, 255, 255, 0.534);
                 max-width: fit-content;
                 margin: auto;
+                box-shadow: 2px 2px 4px #0f0f0f;
+                transition: all 0.5s;
+            }
+            .btn:hover{
+                background-color: rgb(5, 108, 116);
+                color: white;
             }
         }
 
