@@ -1,19 +1,19 @@
 @import "navbar";
 
-$bg_color: rgba(0, 183, 255, 0.199);
+$bg_color: rgba(0, 183, 255, 0.11);
 
 body{
     background: $bg_color;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url(./images/pebbles.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     box-sizing: border-box;
     p{
-        color: rgb(255, 38, 0);
+        color: rgba(0, 0, 0, 0.808);
     }
 }
 
@@ -22,27 +22,76 @@ font{
     size: 18px;
     weight: bold;
 }
+#container {
+    margin: 1rem 1rem;
+}
 
 #whole{ 
-     
-    
+    #homepage{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: url(./images/desktop-wallpaper-e-commerce-news-online-shopping.jpg);
+            background-position: center;
 
-    #content-container{
-        z-index: 4;
+            #hcontent{
+                    margin: 5rem 0.5rem;
+                    box-shadow: 9px 9px 7px #0f0f0f;
+                    background-color: rgba(61, 63, 61, 0.918);
+                    border-radius: 1rem;
+                    padding: 3rem;
+
+                    .btn {
+                            border-radius: 1.4rem;
+                            padding: 0.9rem;
+                            background-color: rgb(155, 122, 79);
+                            max-width: fit-content;
+                            margin: auto;
+                            box-shadow: 2px 2px 4px #0f0f0f;
+                            transition: all 0.5s;
+                        }
+                    
+                        .btn:hover {
+                            background-color: rgb(5, 43, 0);
+                            color: white;
+                        }
+            }
+    }
+        #icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+    #contents{
         display: flex;
         justify-content: center;
         align-items: center;
-         margin: 1rem 1rem;
-         flex-wrap: wrap;
+        // flex-wrap: wrap;
+        border: 5px solid lime;
+        overflow: hidden;
+        -webkit-mask:
+                linear-gradient(90deg,
+                    transparent,
+                    white 20%,
+                    white 80%,
+                    transparent);
+        mask:
+                linear-gradient(90deg,
+                    transparent,
+                    white 20%,
+                    white 80%,
+                    transparent);
+
         
         #content1{
                     margin: 5rem 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
-                    max-width: fit-content;
                     background-color: antiquewhite;
                     border-radius: 1rem;
-            background-color: linear-gradient(to bottom, red, transparent);
-            padding: 3rem;
+                    padding: 3rem;
             
             
 
@@ -61,5 +110,9 @@ font{
             }
         }
 
-    }
+            
+
+
+   
+}
 }

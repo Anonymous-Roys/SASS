@@ -10,18 +10,17 @@
 }
 
 body {
-  background: rgba(0, 183, 255, 0.199);
+  background: rgba(0, 183, 255, 0.11);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url(./images/pebbles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   box-sizing: border-box;
 }
 body p {
-  color: rgb(255, 38, 0);
+  color: rgba(0, 0, 0, 0.808);
 }
 
 font {
@@ -30,25 +29,62 @@ font {
   weight: bold;
 }
 
-#whole #content-container {
-  z-index: 4;
+#container {
+  margin: 1rem 1rem;
+}
+
+#whole #homepage {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 1rem;
-  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(./images/desktop-wallpaper-e-commerce-news-online-shopping.jpg);
+  background-position: center;
 }
-#whole #content-container #content1 {
+#whole #homepage #hcontent {
   margin: 5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  background-color: antiquewhite;
+  background-color: rgba(61, 63, 61, 0.918);
   border-radius: 1rem;
-  background-color: linear-gradient(to bottom, red, transparent);
   padding: 3rem;
 }
-#whole #content-container #content1 .btn {
+#whole #homepage #hcontent .btn {
+  border-radius: 1.4rem;
+  padding: 0.9rem;
+  background-color: rgb(155, 122, 79);
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  box-shadow: 2px 2px 4px #0f0f0f;
+  transition: all 0.5s;
+}
+#whole #homepage #hcontent .btn:hover {
+  background-color: rgb(5, 43, 0);
+  color: white;
+}
+#whole #icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#whole #contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid lime;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+#whole #contents #content1 {
+  margin: 5rem 0.5rem;
+  box-shadow: 9px 9px 7px #0f0f0f;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+#whole #contents #content1 .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
   background-color: rgba(0, 255, 255, 0.534);
@@ -58,7 +94,7 @@ font {
   box-shadow: 2px 2px 4px #0f0f0f;
   transition: all 0.5s;
 }
-#whole #content-container #content1 .btn:hover {
+#whole #contents #content1 .btn:hover {
   background-color: rgb(5, 108, 116);
   color: white;
 }/*# sourceMappingURL=style.css.map */
