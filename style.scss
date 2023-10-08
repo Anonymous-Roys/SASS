@@ -1,7 +1,9 @@
 @import "navbar";
 
-$bg_color: rgba(0, 183, 255, 0.11);
-
+$bg_color: linear-gradient(150deg, rgba(2, 137, 190, 0.589), rgba(0, 0, 0, 0.562));
+*{
+    box-sizing: border-box;
+}
 body{
     background: $bg_color;
     margin: 0;
@@ -50,11 +52,11 @@ font{
                             max-width: fit-content;
                             margin: auto;
                             box-shadow: 2px 2px 4px #0f0f0f;
-                            transition: all 0.5s;
+                            transition: all 0.4s;
                         }
                     
                         .btn:hover {
-                            background-color: rgb(5, 43, 0);
+                            background-color: rgba(88, 60, 22, 0.774);;
                             color: white;
                         }
             }
@@ -63,44 +65,56 @@ font{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            .icon{
+                padding: 0.5rem;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgb(0, 122, 179));
+                border-radius: 0.5rem 0.5rem 0.5rem 0;
+                margin: 0.2rem;
+                transition: all 0.3s;
+            }
+            .icon:hover{
+                translate: 0.5rem;
+            }
         }
 
     #contents{
         display: flex;
         justify-content: center;
         align-items: center;
-        // flex-wrap: wrap;
-        border: 5px solid lime;
+        border: 5px solid rgba(0, 255, 213, 0.356);
         overflow: hidden;
         -webkit-mask:
                 linear-gradient(90deg,
                     transparent,
-                    white 20%,
-                    white 80%,
+                    white 40%,
+                    white 60%,
                     transparent);
         mask:
                 linear-gradient(90deg,
                     transparent,
-                    white 20%,
-                    white 80%,
+                    white 40%,
+                    white 60%,
                     transparent);
 
         
-        #content1{
+        .content1{
                     margin: 5rem 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
                     background-color: antiquewhite;
                     border-radius: 1rem;
-                    padding: 3rem;
+                    padding: 1rem 3rem;
+                    
+                  
             
             
 
             .btn{
                 border-radius: 1.4rem;
                 padding: 0.9rem;
-                background-color: rgba(0, 255, 255, 0.534);
+                background-color: rgb(0, 255, 255);
                 max-width: fit-content;
                 margin: auto;
+                margin-bottom: -38px;
                 box-shadow: 2px 2px 4px #0f0f0f;
                 transition: all 0.5s;
             }
@@ -109,8 +123,39 @@ font{
                 color: white;
             }
         }
-
+        .content1 div{
+            background-color: #ffffff67;
+            padding: 0.1rem 0.5rem;
+            border-radius: 2rem;
+        }
+        @mixin content1_bgdesign{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+        }
+        .first {
+            background: url(./images/red_set.jpeg);
+            @include content1_bgdesign();
             
+        }
+        .second {
+            background: url(./images/cam_phone.jpg);
+            @include content1_bgdesign();
+            background-position: 0;
+        }
+        .third {
+            background: url(./images/iphone.jpg);
+            @include content1_bgdesign();
+            background-position: 0;
+        }
+        .fourth {
+            background: url(./images/headset.jpeg);
+            @include content1_bgdesign();
+        }
+        .fifth {
+            background: url(./images/black_set.jpeg);
+            @include content1_bgdesign();
+        }
 
 
    

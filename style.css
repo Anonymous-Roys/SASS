@@ -9,8 +9,12 @@
   grid-template-columns: auto auto auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: rgba(0, 183, 255, 0.11);
+  background: linear-gradient(150deg, rgba(2, 137, 190, 0.589), rgba(0, 0, 0, 0.562));
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -57,10 +61,10 @@ font {
   max-width: fit-content;
   margin: auto;
   box-shadow: 2px 2px 4px #0f0f0f;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 #whole #homepage #hcontent .btn:hover {
-  background-color: rgb(5, 43, 0);
+  background-color: rgba(88, 60, 22, 0.774);
   color: white;
 }
 #whole #icons {
@@ -68,33 +72,81 @@ font {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+#whole #icons .icon {
+  padding: 0.5rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgb(0, 122, 179));
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+  margin: 0.2rem;
+  transition: all 0.3s;
+}
+#whole #icons .icon:hover {
+  translate: 0.5rem;
+}
 #whole #contents {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid lime;
+  border: 5px solid rgba(0, 255, 213, 0.356);
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
+  mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
 }
-#whole #contents #content1 {
+#whole #contents .content1 {
   margin: 5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
   background-color: antiquewhite;
   border-radius: 1rem;
-  padding: 3rem;
+  padding: 1rem 3rem;
 }
-#whole #contents #content1 .btn {
+#whole #contents .content1 .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
-  background-color: rgba(0, 255, 255, 0.534);
+  background-color: rgb(0, 255, 255);
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
+  margin-bottom: -38px;
   box-shadow: 2px 2px 4px #0f0f0f;
   transition: all 0.5s;
 }
-#whole #contents #content1 .btn:hover {
+#whole #contents .content1 .btn:hover {
   background-color: rgb(5, 108, 116);
   color: white;
+}
+#whole #contents .content1 div {
+  background-color: rgba(255, 255, 255, 0.4039215686);
+  padding: 0.1rem 0.5rem;
+  border-radius: 2rem;
+}
+#whole #contents .first {
+  background: url(./images/red_set.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#whole #contents .second {
+  background: url(./images/cam_phone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: 0;
+}
+#whole #contents .third {
+  background: url(./images/iphone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: 0;
+}
+#whole #contents .fourth {
+  background: url(./images/headset.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#whole #contents .fifth {
+  background: url(./images/black_set.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
