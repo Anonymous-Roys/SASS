@@ -9,11 +9,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
     text-align: center;
-    box-sizing: border-box;
     p{
         color: rgba(0, 0, 0, 0.808);
     }
@@ -29,13 +25,27 @@ font{
 }
 
 #whole{ 
+    #header{
+        .mid-icons{
+            input[type="search"]{
+                border-radius: 5rem;
+                height: 30px;
+                width: 40%;
+            }
+            ::placeholder{
+                font-size: 12px;
+                font-style: italic;
+
+            }
+        }
+    }
     #homepage{
             display: flex;
             justify-content: center;
             align-items: center;
             background-repeat: no-repeat;
             background-size: cover;
-            background: url(./images/desktop-wallpaper-e-commerce-news-online-shopping.jpg);
+            background: url(./images/cart1.jpg);
             background-position: center;
 
             #hcontent{
