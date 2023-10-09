@@ -26,6 +26,12 @@ font{
 
 #whole{ 
     #header{
+        .left-icons a, .right-icons a{
+            font-size: 20px;
+            font-weight: 900;
+            text-decoration: none;
+            color: #0f0f0f;
+        }
         .mid-icons{
             input[type="search"]{
                 border-radius: 5rem;
@@ -138,21 +144,23 @@ font{
             padding: 0.1rem 0.5rem;
             border-radius: 2rem;
         }
-        @mixin content1_bgdesign{
+
+        @mixin content1_bgdesign($bg_image){
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                background: url($bg_image);
         }
+
         .first {
-            background: url(./images/red_set.jpeg);
-            @include content1_bgdesign();
+            @include content1_bgdesign("./images/red_set.jpeg");
             
         }
         .second {
-            background: url(./images/cam_phone.jpg);
-            @include content1_bgdesign();
-            background-position: 0;
+            @include content1_bgdesign("./images/cam_phone.jpg");
+
         }
+      
         .third {
             background: url(./images/iphone.jpg);
             @include content1_bgdesign();

@@ -34,6 +34,12 @@ font {
   margin: 1rem 1rem;
 }
 
+#whole #header .left-icons a, #whole #header .right-icons a {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #0f0f0f;
+}
 #whole #header .mid-icons input[type=search] {
   border-radius: 5rem;
   height: 30px;
@@ -127,36 +133,4 @@ font {
   background-color: rgba(255, 255, 255, 0.4039215686);
   padding: 0.1rem 0.5rem;
   border-radius: 2rem;
-}
-#whole #contents .first {
-  background: url(./images/red_set.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-#whole #contents .second {
-  background: url(./images/cam_phone.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-position: 0;
-}
-#whole #contents .third {
-  background: url(./images/iphone.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-position: 0;
-}
-#whole #contents .fourth {
-  background: url(./images/headset.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-#whole #contents .fifth {
-  background: url(./images/black_set.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }/*# sourceMappingURL=style.css.map */
