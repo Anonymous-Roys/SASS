@@ -133,4 +133,35 @@ font {
   background-color: rgba(255, 255, 255, 0.4039215686);
   padding: 0.1rem 0.5rem;
   border-radius: 2rem;
+}
+#whole #contents .first {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url("./images/red_set.jpeg");
+}
+#whole #contents .second {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url("./images/cam_phone.jpg");
+}
+#whole #contents .third {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url("./images/iphone.jpg");
+  background-position: 0;
+}
+#whole #contents .fourth {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url("./images/headset.jpeg");
+}
+#whole #contents .fifth {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url("./images/black_set.jpeg");
 }/*# sourceMappingURL=style.css.map */

@@ -162,17 +162,15 @@ font{
         }
       
         .third {
-            background: url(./images/iphone.jpg);
-            @include content1_bgdesign();
+            @include content1_bgdesign("./images/iphone.jpg");
             background-position: 0;
         }
         .fourth {
-            background: url(./images/headset.jpeg);
-            @include content1_bgdesign();
+            @include content1_bgdesign("./images/headset.jpeg");
         }
         .fifth {
-            background: url(./images/black_set.jpeg);
-            @include content1_bgdesign();
+
+            @include content1_bgdesign("./images/black_set.jpeg");
         }
 
 
