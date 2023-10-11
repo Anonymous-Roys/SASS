@@ -44,6 +44,13 @@ font{
 
             }
         }
+        .right-icons i{
+            visibility:hidden;
+        }
+
+        .right-icons:hover i{
+            visibility:visible;
+        }
     }
     #homepage{
             display: flex;
@@ -111,7 +118,6 @@ font{
                     white 40%,
                     white 60%,
                     transparent);
-
         
         .content1{
                     margin: 5rem 0.5rem;
@@ -119,6 +125,7 @@ font{
                     background-color: antiquewhite;
                     border-radius: 1rem;
                     padding: 1rem 3rem;
+                    max-width: 9%;
                     
                   
             
@@ -176,4 +183,51 @@ font{
 
    
 }
+}
+
+
+
+#content-container {
+    max-width:100%;
+}
+
+
+[data-animated="true"] {
+    border: 5px solid lime;
+    overflow: hidden;
+    -webkit-mask:
+        linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+    mask:
+        linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+}
+
+
+#content-container[data-animated="true"] #contents {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 30s linear infinite;
+}
+
+
+
+#contents {
+    padding-block: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+
+    }
 }
