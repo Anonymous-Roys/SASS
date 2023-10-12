@@ -152,11 +152,12 @@ font{
             border-radius: 2rem;
         }
 
-        @mixin content1_bgdesign($bg_image){
+        @mixin content1_bgdesign($bg_image, $bg_pos:center){
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center;
+                background-position: $bg_position;
                 background: url($bg_image);
+                background-repeat: no-repeat
         }
 
         .first {
@@ -164,7 +165,7 @@ font{
             
         }
         .second {
-            @include content1_bgdesign("./images/cam_phone.jpg");
+            @include content1_bgdesign("./images/cam_phone.jpg", $bg_pos: 0);
 
         }
       
@@ -173,7 +174,7 @@ font{
             background-position: 0;
         }
         .fourth {
-            @include content1_bgdesign("./images/headset.jpeg");
+            @include content1_bgdesign("./images/headset.jpeg", $bg_pos: 0);
         }
         .fifth {
 
