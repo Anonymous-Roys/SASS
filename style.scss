@@ -1,6 +1,6 @@
 @import "navbar";
 
-$bg_color: linear-gradient(150deg, rgba(2, 137, 190, 0.589), rgba(0, 0, 0, 0.562));
+$bg_color: linear-gradient(150deg, rgba(2, 137, 190, 0.589), rgba(0, 0, 0, 0.747));
 *{
     box-sizing: border-box;
 }
@@ -32,6 +32,9 @@ font{
             text-decoration: none;
             color: #0f0f0f;
         }
+                .right-icons a:hover{
+                    color: #ff0000;
+                }
         .mid-icons{
             input[type="search"]{
                 border-radius: 5rem;
@@ -50,6 +53,9 @@ font{
 
         .right-icons:hover i{
             visibility:visible;
+        }
+        a:hover{
+            color: #ff0000;
         }
     }
     #homepage{
@@ -231,4 +237,19 @@ font{
         transform: translate(calc(-50% - 0.5rem));
 
     }
+}
+
+
+
+
+/* styles.css */
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.results-container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
