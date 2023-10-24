@@ -110,7 +110,6 @@ font{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 5px solid rgba(0, 255, 213, 0.356);
         overflow: hidden;
         -webkit-mask:
                 linear-gradient(90deg,
@@ -200,7 +199,6 @@ font{
 
 
 [data-animated="true"] {
-    border: 5px solid lime;
     overflow: hidden;
     -webkit-mask:
         linear-gradient(90deg,
@@ -239,6 +237,18 @@ font{
     }
 }
 
+.top-product{
+    display: flex;
+    justify-content: space-between;
+    
+    .top-product-item{
+        width: 45%;
+        height: auto;
+        box-shadow: 2px 2px 5px #000;
+        background: #ababab;
+        padding: 30px;
+    }
+}
 
 
 
@@ -251,5 +261,4 @@ font{
 .results-container {
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
 }
