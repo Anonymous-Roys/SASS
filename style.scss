@@ -1,6 +1,15 @@
+$primary-color: #0051A5;
+$secondary-color1: #bbb7b7;
+$secondary-color2: #FFD700;
+
+
+
 @import "navbar";
 
-$bg_color: linear-gradient(150deg, rgba(2, 137, 190, 0.589), rgba(0, 0, 0, 0.747));
+
+
+
+$bg_color: linear-gradient(150deg, $secondary-color1, $primary-color, #fff 80%);
 *{
     box-sizing: border-box;
 }
@@ -26,26 +35,37 @@ font{
 
 #whole{ 
     #header{
+        background-color: rgb(207, 177, 3);
         .left-icons a, .right-icons a{
             font-size: 20px;
             font-weight: 900;
             text-decoration: none;
             color: #0f0f0f;
         }
-                .right-icons a:hover{
-                    color: #ff0000;
-                }
+        
         .mid-icons{
             input[type="search"]{
-                border-radius: 5rem;
+                border-radius: 0.5rem;
                 height: 30px;
-                width: 40%;
+                width: 50%;
+                box-shadow: 3px 3px 2px #000;
+                background-color: #0050a5e0;
+                border: 1px solid #000000;
+                outline:1px solid #fff;
+                padding: 0px 0px 0px 5px;
+                
             }
             ::placeholder{
-                font-size: 12px;
+                font-size: 16px;
                 font-style: italic;
+                color: $secondary-color1;
+                
 
             }
+
+        }
+        .right-icons a:hover {
+            color: #464444fd;
         }
         .right-icons i{
             visibility:hidden;
@@ -53,9 +73,6 @@ font{
 
         .right-icons:hover i{
             visibility:visible;
-        }
-        a:hover{
-            color: #ff0000;
         }
     }
     #homepage{
@@ -66,27 +83,30 @@ font{
             background-size: cover;
             background: url(./images/cart1.jpg);
             background-position: center;
+            height: 85vh;
 
             #hcontent{
                     margin: 5rem 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
                     background-color: rgba(61, 63, 61, 0.918);
                     border-radius: 1rem;
-                    padding: 3rem;
+                    padding: 4rem 4rem 2rem;
 
                     .btn {
                             border-radius: 1.4rem;
                             padding: 0.9rem;
-                            background-color: rgb(155, 122, 79);
+                            background-color: $primary-color;
                             max-width: fit-content;
-                            margin: auto;
+                            margin: 50px auto 0px;
                             box-shadow: 2px 2px 4px #0f0f0f;
                             transition: all 0.4s;
+                            font-weight: 700;
+                            font-size: 20px;
                         }
                     
                         .btn:hover {
-                            background-color: rgba(88, 60, 22, 0.774);;
-                            color: white;
+                            background-color: rgb(207, 177, 3);
+                            color: $primary-color;
                         }
             }
     }
@@ -96,7 +116,7 @@ font{
             justify-content: space-between;
             .icon{
                 padding: 0.5rem;
-                background: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgb(0, 122, 179));
+                background: linear-gradient(to right, $secondary-color1 90%, $secondary-color2);
                 border-radius: 0.5rem 0.5rem 0.5rem 0;
                 margin: 0.2rem;
                 transition: all 0.3s;
@@ -125,7 +145,7 @@ font{
                     transparent);
         
         .content1{
-                    margin: 5rem 0.5rem;
+                    margin: 0.5rem 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
                     background-color: antiquewhite;
                     border-radius: 1rem;
@@ -157,33 +177,33 @@ font{
             border-radius: 2rem;
         }
 
-        @mixin content1_bgdesign($bg_image, $bg_pos:center){
+        @mixin content1-bgdesign($bg_image, $bg_pos:center){
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: $bg_position;
+                background-position: $bg_pos;
                 background: url($bg_image);
-                background-repeat: no-repeat
+                background-repeat: no-repeat;
         }
 
         .first {
-            @include content1_bgdesign("./images/red_set.jpeg");
+            @include content1-bgdesign("./images/red_set.jpeg");
             
         }
         .second {
-            @include content1_bgdesign("./images/cam_phone.jpg", $bg_pos: 0);
+            @include content1-bgdesign("./images/cam_phone.jpg", $bg_pos: 0);
 
         }
       
         .third {
-            @include content1_bgdesign("./images/iphone.jpg");
+            @include content1-bgdesign("./images/iphone.jpg");
             background-position: 0;
         }
         .fourth {
-            @include content1_bgdesign("./images/headset.jpeg", $bg_pos: 0);
+            @include content1-bgdesign("./images/headset.jpeg", $bg_pos: 0);
         }
         .fifth {
 
-            @include content1_bgdesign("./images/black_set.jpeg");
+            @include content1-bgdesign("./images/black_set.jpeg");
         }
 
 
@@ -239,16 +259,66 @@ font{
 
 .top-product{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+
     .top-product-item{
-        width: 45%;
-        height: auto;
-        box-shadow: 2px 2px 5px #000;
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        height: 250px;
+        box-shadow: 4px 4px 5px #000;
         background: #ababab;
-        padding: 30px;
+        padding: 1rem;
+        margin: 0.5rem 0.5rem;
+        border-radius: 3px;
+        transition: all 0.3s;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 500;
     }
+
+    .top-product-item div{
+        width: 220px;        
+    }
+    .top-product-item div img {
+        width: 100%;
+    }
+    .top-product-item img:hover {
+        scale: 1.1;
+    }
+
+    @mixin bg-top-product($image){
+        background: url($image);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .i1 div:first-child{
+        @include bg-top-product("./images/game pad.jpeg");
+    }
+
+    .i2 div:first-child {
+        @include bg-top-product("./images/game pad.jpeg");
+    }
+
+    .i3 div:first-child {
+        @include bg-top-product("./images/game pad.jpeg");
+    }
+
+    .i4 div:first-child {
+        @include bg-top-product("./images/game pad.jpeg");
+    }
+
 }
+    
+         
+
+
+    
+    
+
 
 
 

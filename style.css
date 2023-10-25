@@ -14,7 +14,7 @@
 }
 
 body {
-  background: linear-gradient(150deg, rgba(2, 137, 190, 0.589), rgba(0, 0, 0, 0.562));
+  background: linear-gradient(150deg, #bbb7b7, #0051A5, #fff 80%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,6 +34,9 @@ font {
   margin: 1rem 1rem;
 }
 
+#whole #header {
+  background-color: rgb(207, 177, 3);
+}
 #whole #header .left-icons a, #whole #header .right-icons a {
   font-size: 20px;
   font-weight: 900;
@@ -41,17 +44,27 @@ font {
   color: #0f0f0f;
 }
 #whole #header .mid-icons input[type=search] {
-  border-radius: 5rem;
+  border-radius: 0.5rem;
   height: 30px;
-  width: 40%;
+  width: 50%;
+  box-shadow: 3px 3px 2px #000;
+  background-color: rgba(0, 80, 165, 0.8784313725);
+  border: 1px solid #000000;
+  outline: 1px solid #fff;
+  padding: 0px 0px 0px 5px;
 }
 #whole #header .mid-icons ::-moz-placeholder {
-  font-size: 12px;
+  font-size: 16px;
   font-style: italic;
+  color: #bbb7b7;
 }
 #whole #header .mid-icons ::placeholder {
-  font-size: 12px;
+  font-size: 16px;
   font-style: italic;
+  color: #bbb7b7;
+}
+#whole #header .right-icons a:hover {
+  color: rgba(70, 68, 68, 0.9921568627);
 }
 #whole #header .right-icons i {
   visibility: hidden;
@@ -67,27 +80,30 @@ font {
   background-size: cover;
   background: url(./images/cart1.jpg);
   background-position: center;
+  height: 85vh;
 }
 #whole #homepage #hcontent {
   margin: 5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
   background-color: rgba(61, 63, 61, 0.918);
   border-radius: 1rem;
-  padding: 3rem;
+  padding: 4rem 4rem 2rem;
 }
 #whole #homepage #hcontent .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
-  background-color: rgb(155, 122, 79);
+  background-color: #0051A5;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  margin: auto;
+  margin: 50px auto 0px;
   box-shadow: 2px 2px 4px #0f0f0f;
   transition: all 0.4s;
+  font-weight: 700;
+  font-size: 20px;
 }
 #whole #homepage #hcontent .btn:hover {
-  background-color: rgba(88, 60, 22, 0.774);
-  color: white;
+  background-color: rgb(207, 177, 3);
+  color: #0051A5;
 }
 #whole #icons {
   display: flex;
@@ -96,7 +112,7 @@ font {
 }
 #whole #icons .icon {
   padding: 0.5rem;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgb(0, 122, 179));
+  background: linear-gradient(to right, #bbb7b7 90%, #FFD700);
   border-radius: 0.5rem 0.5rem 0.5rem 0;
   margin: 0.2rem;
   transition: all 0.3s;
@@ -108,13 +124,12 @@ font {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 255, 213, 0.356);
   overflow: hidden;
   -webkit-mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
   mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
 }
 #whole #contents .content1 {
-  margin: 5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
   background-color: antiquewhite;
   border-radius: 1rem;
@@ -146,31 +161,36 @@ font {
   background-size: cover;
   background-position: center;
   background: url("./images/red_set.jpeg");
+  background-repeat: no-repeat;
 }
 #whole #contents .second {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0;
   background: url("./images/cam_phone.jpg");
+  background-repeat: no-repeat;
 }
 #whole #contents .third {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background: url("./images/iphone.jpg");
+  background-repeat: no-repeat;
   background-position: 0;
 }
 #whole #contents .fourth {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0;
   background: url("./images/headset.jpeg");
+  background-repeat: no-repeat;
 }
 #whole #contents .fifth {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background: url("./images/black_set.jpeg");
+  background-repeat: no-repeat;
 }
 
 #content-container {
@@ -178,7 +198,6 @@ font {
 }
 
 [data-animated=true] {
-  border: 5px solid lime;
   overflow: hidden;
   -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
@@ -202,4 +221,65 @@ font {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
+}
+.top-product {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.top-product .top-product-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+  box-shadow: 4px 4px 5px #000;
+  background: #ababab;
+  padding: 1rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 3px;
+  transition: all 0.3s;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.top-product .top-product-item div {
+  width: 220px;
+}
+.top-product .top-product-item div img {
+  width: 100%;
+}
+.top-product .top-product-item img:hover {
+  scale: 1.1;
+}
+.top-product .i1 div:first-child {
+  background: url("./images/game pad.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.top-product .i2 div:first-child {
+  background: url("./images/game pad.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.top-product .i3 div:first-child {
+  background: url("./images/game pad.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.top-product .i4 div:first-child {
+  background: url("./images/game pad.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* styles.css */
+.search-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.results-container {
+  margin: 20px;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
