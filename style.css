@@ -154,28 +154,32 @@ body p {
   border-radius: 2rem;
 }
 #whole #contents .first {
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
   background: url("./images/red_set.jpeg");
 }
 #whole #contents .second {
-  background-size: cover;
-  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   background: url("./images/cam_phone.jpg");
 }
 #whole #contents .third {
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
   background: url("./images/iphone.jpg");
-  background-position: 0;
 }
 #whole #contents .fourth {
-  background-size: cover;
-  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   background: url("./images/headset.jpeg");
 }
 #whole #contents .fifth {
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
   background: url("./images/black_set.jpeg");
 }
@@ -194,7 +198,7 @@ body p {
   width: -moz-max-content;
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 30s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 #contents {
