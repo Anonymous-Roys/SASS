@@ -154,40 +154,30 @@ body p {
   border-radius: 2rem;
 }
 #whole #contents .first {
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background: url("./images/red_set.jpeg");
-  background-repeat: no-repeat;
 }
 #whole #contents .second {
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
   background: url("./images/cam_phone.jpg");
-  background-repeat: no-repeat;
 }
 #whole #contents .third {
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background: url("./images/iphone.jpg");
-  background-repeat: no-repeat;
   background-position: 0;
 }
 #whole #contents .fourth {
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
   background: url("./images/headset.jpeg");
-  background-repeat: no-repeat;
 }
 #whole #contents .fifth {
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background: url("./images/black_set.jpeg");
-  background-repeat: no-repeat;
 }
 
 #content-container {

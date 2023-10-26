@@ -184,11 +184,9 @@ body{
         }
 
         @mixin content1-bgdesign($bg_image, $bg_pos:center){
-                background-repeat: no-repeat;
                 background-size: cover;
                 background-position: $bg_pos;
                 background: url($bg_image);
-                background-repeat: no-repeat;
         }
 
         .first {
@@ -264,9 +262,6 @@ body{
 }
 
 .top-product-section{
-    h2{
-
-    }
 
     .top-product{
         display: flex;
