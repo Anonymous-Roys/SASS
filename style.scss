@@ -1,6 +1,6 @@
 $primary-color: #0051A5;
 $secondary-color1: #bbb7b7;
-$secondary-color2: #FFD700;
+$secondary-color2: #00c3ff;
 
 
 
@@ -14,7 +14,6 @@ $bg_color: linear-gradient(150deg, $secondary-color1, $primary-color, #fff 80%);
     box-sizing: border-box;
 }
 body{
-    background: $bg_color;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,13 +35,22 @@ body{
 
 
 
-#container {
-    margin: 1rem 1rem;
-}
-
 #whole{ 
+    margin: 0;
+    padding: 0px 15rem;
+#homepage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(./images/cart1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        
+
     #header{
-        background-color: rgb(207, 177, 3);
         .left-icons a, .right-icons a{
             font-size: 20px;
             font-weight: 900;
@@ -56,16 +64,19 @@ body{
                 height: 30px;
                 width: 50%;
                 box-shadow: 3px 3px 2px #000;
-                background-color: #0050a5e0;
+                background-color: $secondary-color1;
                 border: 1px solid #000000;
                 outline:1px solid #fff;
                 padding: 0px 0px 0px 5px;
+                &:focus{
+                    background-color: #0050a5e0;
+                    
+                }
                 
             }
             ::placeholder{
                 font-size: 16px;
                 font-style: italic;
-                color: $secondary-color1;
                 
 
             }
@@ -82,27 +93,19 @@ body{
             visibility:visible;
         }
     }
-    #homepage{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background: url(./images/cart1.jpg);
-            background-position: center;
-            height: 85vh;
-
+    
             #hcontent{
                     margin: 5rem 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
-                    background-color: rgba(61, 63, 61, 0.918);
-                    border-radius: 1rem;
+                    background-color: $secondary-color1;
+                    border-radius: 0.5rem;
                     padding: 4rem 4rem 2rem;
+                    width: fit-content;
 
                     .btn {
                             border-radius: 1.4rem;
                             padding: 0.9rem;
-                            background-color: $primary-color;
+                            background-color: #6e6b6b;
                             max-width: fit-content;
                             margin: 50px auto 0px;
                             box-shadow: 2px 2px 4px #0f0f0f;
@@ -112,7 +115,7 @@ body{
                         }
                     
                         .btn:hover {
-                            background-color: rgb(207, 177, 3);
+                            background-color: $secondary-color2;
                             color: $primary-color;
                         }
             }

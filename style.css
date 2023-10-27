@@ -1,12 +1,21 @@
 #header {
-  z-index: 7;
-  background: rgba(34, 34, 34, 0.493);
-  padding: 15px;
   margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 #header nav {
   display: grid;
   grid-template-columns: auto auto auto;
+  margin: 0.5rem;
+  background-color: rgba(171, 171, 171, 0.7058823529);
+  padding: 2rem;
+  width: 94%;
+  border-radius: 2rem;
 }
 
 * {
@@ -14,7 +23,6 @@
 }
 
 body {
-  background: linear-gradient(150deg, #bbb7b7, #0051A5, #fff 80%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,69 +35,70 @@ body p {
   color: rgba(0, 0, 0, 0.808);
 }
 
-#container {
-  margin: 1rem 1rem;
-}
-
-#whole #header {
-  background-color: rgb(207, 177, 3);
-}
-#whole #header .left-icons a, #whole #header .right-icons a {
-  font-size: 20px;
-  font-weight: 900;
-  text-decoration: none;
-  color: #0f0f0f;
-}
-#whole #header .mid-icons input[type=search] {
-  border-radius: 0.5rem;
-  height: 30px;
-  width: 50%;
-  box-shadow: 3px 3px 2px #000;
-  background-color: rgba(0, 80, 165, 0.8784313725);
-  border: 1px solid #000000;
-  outline: 1px solid #fff;
-  padding: 0px 0px 0px 5px;
-}
-#whole #header .mid-icons ::-moz-placeholder {
-  font-size: 16px;
-  font-style: italic;
-  color: #bbb7b7;
-}
-#whole #header .mid-icons ::placeholder {
-  font-size: 16px;
-  font-style: italic;
-  color: #bbb7b7;
-}
-#whole #header .right-icons a:hover {
-  color: rgba(70, 68, 68, 0.9921568627);
-}
-#whole #header .right-icons i {
-  visibility: hidden;
-}
-#whole #header .right-icons:hover i {
-  visibility: visible;
+#whole {
+  margin: 0;
+  padding: 0px 15rem;
 }
 #whole #homepage {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background: url(./images/cart1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background: url(./images/cart1.jpg);
   background-position: center;
-  height: 85vh;
+  height: 100vh;
+}
+#whole #homepage #header .left-icons a, #whole #homepage #header .right-icons a {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #0f0f0f;
+}
+#whole #homepage #header .mid-icons input[type=search] {
+  border-radius: 0.5rem;
+  height: 30px;
+  width: 50%;
+  box-shadow: 3px 3px 2px #000;
+  background-color: #bbb7b7;
+  border: 1px solid #000000;
+  outline: 1px solid #fff;
+  padding: 0px 0px 0px 5px;
+}
+#whole #homepage #header .mid-icons input[type=search]:focus {
+  background-color: rgba(0, 80, 165, 0.8784313725);
+}
+#whole #homepage #header .mid-icons ::-moz-placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+#whole #homepage #header .mid-icons ::placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+#whole #homepage #header .right-icons a:hover {
+  color: rgba(70, 68, 68, 0.9921568627);
+}
+#whole #homepage #header .right-icons i {
+  visibility: hidden;
+}
+#whole #homepage #header .right-icons:hover i {
+  visibility: visible;
 }
 #whole #homepage #hcontent {
   margin: 5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
-  background-color: rgba(61, 63, 61, 0.918);
-  border-radius: 1rem;
+  background-color: #bbb7b7;
+  border-radius: 0.5rem;
   padding: 4rem 4rem 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #whole #homepage #hcontent .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
-  background-color: #0051A5;
+  background-color: #6e6b6b;
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: 50px auto 0px;
@@ -99,7 +108,7 @@ body p {
   font-size: 20px;
 }
 #whole #homepage #hcontent .btn:hover {
-  background-color: rgb(207, 177, 3);
+  background-color: #00c3ff;
   color: #0051A5;
 }
 #whole #icons {
@@ -109,7 +118,7 @@ body p {
 }
 #whole #icons .icon {
   padding: 0.5rem;
-  background: linear-gradient(to right, #bbb7b7 90%, #FFD700);
+  background: linear-gradient(to right, #bbb7b7 90%, #00c3ff);
   border-radius: 0.5rem 0.5rem 0.5rem 0;
   margin: 0.2rem;
   transition: all 0.3s;
