@@ -1,10 +1,9 @@
 #header {
   margin: 0 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
 }
@@ -37,11 +36,9 @@ body p {
 
 #whole {
   margin: 0;
-  padding: 0px 15rem;
 }
 #whole #homepage {
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background: url(./images/cart1.jpg);
@@ -86,7 +83,7 @@ body p {
 #whole #homepage #header .right-icons:hover i {
   visibility: visible;
 }
-#whole #homepage #hcontent {
+#whole #homepage #h-container #hcontent {
   margin: 5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
   background-color: #bbb7b7;
@@ -95,7 +92,7 @@ body p {
   width: -moz-fit-content;
   width: fit-content;
 }
-#whole #homepage #hcontent .btn {
+#whole #homepage #h-container #hcontent .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
   background-color: #6e6b6b;
@@ -107,7 +104,7 @@ body p {
   font-weight: 700;
   font-size: 20px;
 }
-#whole #homepage #hcontent .btn:hover {
+#whole #homepage #h-container #hcontent .btn:hover {
   background-color: #00c3ff;
   color: #0051A5;
 }
