@@ -1,0 +1,14 @@
+footer {
+  background: linear-gradient(to right, #0011ad, #03002c);
+}
+footer #footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer * {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}/*# sourceMappingURL=footer.css.map */
