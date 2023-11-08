@@ -248,8 +248,8 @@ body p {
 .top-product-section .top-product .top-product-item {
   display: flex;
   flex-wrap: wrap;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   box-shadow: 4px 4px 5px #000;
   background: #ababab;
   padding: 1rem;
