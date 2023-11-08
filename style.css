@@ -16,6 +16,42 @@
   width: 94%;
   border-radius: 2rem;
 }
+#header nav .left-icons a, #header nav .right-icons a {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #0f0f0f;
+}
+#header nav .mid-icons input[type=search] {
+  border-radius: 0.5rem;
+  height: 30px;
+  width: 50%;
+  box-shadow: 3px 3px 2px #000;
+  background-color: #bbb7b7;
+  border: 1px solid #000000;
+  outline: 1px solid #fff;
+  padding: 0px 0px 0px 5px;
+}
+#header nav .mid-icons input[type=search]:focus {
+  background-color: rgba(0, 80, 165, 0.8784313725);
+}
+#header nav .mid-icons ::-moz-placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+#header nav .mid-icons ::placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+#header nav .right-icons a:hover {
+  color: rgba(70, 68, 68, 0.9921568627);
+}
+#header nav .right-icons i {
+  visibility: hidden;
+}
+#header nav .right-icons:hover i {
+  visibility: visible;
+}
 
 footer {
   background: linear-gradient(to right, #0011ad, #03002c);
@@ -66,42 +102,6 @@ body p {
   background-size: cover;
   background-position: center;
   height: 100vh;
-}
-#whole #homepage #header .left-icons a, #whole #homepage #header .right-icons a {
-  font-size: 20px;
-  font-weight: 900;
-  text-decoration: none;
-  color: #0f0f0f;
-}
-#whole #homepage #header .mid-icons input[type=search] {
-  border-radius: 0.5rem;
-  height: 30px;
-  width: 50%;
-  box-shadow: 3px 3px 2px #000;
-  background-color: #bbb7b7;
-  border: 1px solid #000000;
-  outline: 1px solid #fff;
-  padding: 0px 0px 0px 5px;
-}
-#whole #homepage #header .mid-icons input[type=search]:focus {
-  background-color: rgba(0, 80, 165, 0.8784313725);
-}
-#whole #homepage #header .mid-icons ::-moz-placeholder {
-  font-size: 16px;
-  font-style: italic;
-}
-#whole #homepage #header .mid-icons ::placeholder {
-  font-size: 16px;
-  font-style: italic;
-}
-#whole #homepage #header .right-icons a:hover {
-  color: rgba(70, 68, 68, 0.9921568627);
-}
-#whole #homepage #header .right-icons i {
-  visibility: hidden;
-}
-#whole #homepage #header .right-icons:hover i {
-  visibility: visible;
 }
 #whole #homepage #h-container #hcontent {
   margin: 5rem 0.5rem;
