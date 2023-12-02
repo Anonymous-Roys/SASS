@@ -90,10 +90,7 @@ body p {
   color: rgba(0, 0, 0, 0.808);
 }
 
-#whole {
-  margin: 0;
-}
-#whole #homepage {
+#homepage {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -101,9 +98,9 @@ body p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  max-height: 100vh;
 }
-#whole #homepage #h-container #hcontent {
+#homepage #h-container #hcontent {
   margin: 5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
   background-color: #bbb7b7;
@@ -112,7 +109,7 @@ body p {
   width: -moz-fit-content;
   width: fit-content;
 }
-#whole #homepage #h-container #hcontent .btn {
+#homepage #h-container #hcontent .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
   background-color: #6e6b6b;
@@ -124,26 +121,28 @@ body p {
   font-weight: 700;
   font-size: 20px;
 }
-#whole #homepage #h-container #hcontent .btn:hover {
+#homepage #h-container #hcontent .btn:hover {
   background-color: #00c3ff;
   color: #0051A5;
 }
-#whole #icons {
+
+#icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#whole #icons .icon {
+#icons .icon {
   padding: 0.5rem;
   background: linear-gradient(to right, #bbb7b7 90%, #00c3ff);
   border-radius: 0.5rem 0.5rem 0.5rem 0;
   margin: 0.2rem;
   transition: all 0.3s;
 }
-#whole #icons .icon:hover {
+#icons .icon:hover {
   translate: 0.5rem;
 }
-#whole #contents {
+
+#contents {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,7 +150,7 @@ body p {
   -webkit-mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
   mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
 }
-#whole #contents .content1 {
+#contents .content1 {
   margin: 0.5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
   background-color: antiquewhite;
@@ -159,7 +158,7 @@ body p {
   padding: 1rem 3rem;
   max-width: 9%;
 }
-#whole #contents .content1 .btn {
+#contents .content1 .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
   background-color: rgb(0, 255, 255);
@@ -170,40 +169,40 @@ body p {
   box-shadow: 2px 2px 4px #0f0f0f;
   transition: all 0.5s;
 }
-#whole #contents .content1 .btn:hover {
+#contents .content1 .btn:hover {
   background-color: rgb(5, 108, 116);
   color: white;
 }
-#whole #contents .content1 div {
+#contents .content1 div {
   background-color: rgba(255, 255, 255, 0.4039215686);
   padding: 0.1rem 0.5rem;
   border-radius: 2rem;
 }
-#whole #contents .first {
+#contents .first {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background: url("./images/red_set.jpeg");
 }
-#whole #contents .second {
+#contents .second {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background: url("./images/cam_phone.jpg");
 }
-#whole #contents .third {
+#contents .third {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background: url("./images/iphone.jpg");
 }
-#whole #contents .fourth {
+#contents .fourth {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background: url("./images/headset.jpeg");
 }
-#whole #contents .fifth {
+#contents .fifth {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

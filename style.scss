@@ -35,11 +35,6 @@ body{
 }
 
 
-
-
-#whole{ 
-    margin: 0;
-    // padding: 0px 15rem;
 #homepage {
         // display: flex;
         justify-content: flex-start;
@@ -49,7 +44,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        max-height: 100vh;
         
     #h-container{
         
@@ -175,7 +170,6 @@ body{
 
 
    
-}
 }
 
 
