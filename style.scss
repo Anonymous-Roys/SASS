@@ -229,8 +229,8 @@ body{
         .top-product-item{
             display: flex;
             flex-wrap: wrap;
-            width: 200px;
-            height: 200px;
+            max-width: 180px;
+            max-height: 180px;
             box-shadow: 4px 4px 5px #000;
             background: #ababab;
             padding: 1rem;
@@ -238,7 +238,7 @@ body{
             border-radius: 6px;
             transition: all 0.3s;
             justify-content: center;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 500;
             
         }
@@ -265,6 +265,9 @@ body{
 
         .top-product-item div:first-child:hover img{
             transform: scale(1.1);
+        }
+        .top-product-item p{
+            font-size: 14px;
         }
         
     }
