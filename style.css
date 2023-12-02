@@ -98,7 +98,7 @@ body p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-height: 100vh;
+  height: 80vh;
 }
 #homepage #h-container #hcontent {
   margin: 5rem 0.5rem;
@@ -108,6 +108,8 @@ body p {
   padding: 4rem 4rem 2rem;
   width: -moz-fit-content;
   width: fit-content;
+  display: flex;
+  align-items: center;
 }
 #homepage #h-container #hcontent .btn {
   border-radius: 1.4rem;
@@ -247,8 +249,8 @@ body p {
 .top-product-section .top-product .top-product-item {
   display: flex;
   flex-wrap: wrap;
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 200px;
+  max-height: 200px;
   box-shadow: 4px 4px 5px #000;
   background: #ababab;
   padding: 1rem;
