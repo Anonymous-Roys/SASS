@@ -92,7 +92,8 @@ body p {
 }
 
 #homepage {
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -108,8 +109,6 @@ body p {
   padding: 4rem 4rem 2rem;
   width: -moz-fit-content;
   width: fit-content;
-  display: flex;
-  align-items: center;
 }
 #homepage #h-container #hcontent .btn {
   border-radius: 1.4rem;

@@ -36,8 +36,8 @@ body{
 
 
 #homepage {
-        // display: flex;
-        justify-content: flex-start;
+        display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         // background: url(./images/cart1.jpg);
@@ -47,8 +47,7 @@ body{
         height: 80vh;
         
     #h-container{
-        
-    
+
             #hcontent{
                     margin: 5rem 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
@@ -56,8 +55,6 @@ body{
                     border-radius: 0.5rem;
                     padding: 4rem 4rem 2rem;
                     width: fit-content;
-                    display: flex;
-                    align-items: center;
 
                     .btn {
                             border-radius: 1.4rem;
