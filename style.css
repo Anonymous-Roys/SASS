@@ -55,7 +55,7 @@
 }
 
 footer {
-  background: linear-gradient(to right, #0011ad, #03002c);
+  background: #0051A5;
   border-radius: 25px 25px 0 0;
 }
 footer #footer {
@@ -64,7 +64,7 @@ footer #footer {
   align-items: center;
 }
 footer #footer button {
-  background-color: #0011ad;
+  background-color: #bbb7b7;
   border-radius: 10px;
 }
 footer * {
@@ -162,7 +162,7 @@ body p {
 #contents .content1 .btn {
   border-radius: 1.4rem;
   padding: 0.5rem;
-  background-color: rgb(0, 255, 255);
+  background-color: #0051A5;
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
@@ -171,7 +171,7 @@ body p {
   transition: all 0.5s;
 }
 #contents .content1 .btn:hover {
-  background-color: rgb(5, 108, 116);
+  background-color: #00c3ff;
   color: white;
 }
 #contents .content1 div {
