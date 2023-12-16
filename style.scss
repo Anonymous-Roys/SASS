@@ -91,7 +91,7 @@ body{
             }
         }
 
-    #contents{
+    .contents{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -173,7 +173,7 @@ body{
 
 
 
-#content-container {
+.content-container {
     max-width:100%;
 }
 
@@ -195,15 +195,15 @@ body{
 }
 
 
-#content-container[data-animated="true"] #contents {
+.content-container[data-animated="true"] .contents {
     width: max-content;
     flex-wrap: nowrap;
-    animation: scroll 10s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 
 
-#contents {
+.contents {
     padding-block: 1rem;
     display: flex;
     gap: 1rem;
