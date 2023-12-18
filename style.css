@@ -291,4 +291,16 @@ body p {
 .results-container {
   margin: 20px;
   padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #icons {
+    flex-wrap: nowrap;
+  }
+  #icons .icon {
+    font-size: 16px;
+    padding: 20;
+    position: absolute;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

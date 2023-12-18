@@ -56,7 +56,6 @@ body{
                     border-radius: 0.5rem;
                     padding: 4rem 4rem 2rem;
                     width: fit-content;
-
                     .btn {
                             border-radius: 1.4rem;
                             padding: 0.9rem;
@@ -291,6 +290,16 @@ body{
     padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 800px) {
+    #icons{
+        flex-wrap: nowrap;
+        
+        .icon{
+            font-size: 16px;
+            padding: 20;
+            position: absolute;
+            width: 100%;
+            
+        }
+    }
 }
