@@ -1,9 +1,10 @@
 #header {
   margin: 0 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 999;
@@ -15,7 +16,7 @@
   background-color: rgba(171, 171, 171, 0.7058823529);
   padding: 0.9rem;
   width: 94%;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 #header nav .left-icons a, #header nav .right-icons a {
   font-size: 20px;
@@ -96,10 +97,11 @@ body p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: url(./images/cart1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  padding: 18% 0;
 }
 #homepage #h-container #hcontent {
   margin: 5rem 0.5rem;
@@ -220,7 +222,7 @@ body p {
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-.content-container[data-animated="true"] .contents {
+.content-container[data-animated=true] .contents {
   width: -moz-max-content;
   width: max-content;
   flex-wrap: nowrap;

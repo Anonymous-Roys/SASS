@@ -40,11 +40,12 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // background: url(./images/cart1.jpg);
+        background: url(./images/cart1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 80vh;
+        // height: 80vh;
+        padding: 18% 0;
         
     #h-container{
 
@@ -194,7 +195,6 @@ body{
             transparent);
 }
 
-
 .content-container[data-animated="true"] .contents {
     width: max-content;
     flex-wrap: nowrap;
@@ -289,4 +289,8 @@ body{
 .results-container {
     margin: 20px;
     padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    
 }

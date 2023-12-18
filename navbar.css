@@ -1,9 +1,10 @@
 #header {
   margin: 0 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 999;
@@ -15,7 +16,7 @@
   background-color: rgba(171, 171, 171, 0.7058823529);
   padding: 0.9rem;
   width: 94%;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 #header nav .left-icons a, #header nav .right-icons a {
   font-size: 20px;
