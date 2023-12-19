@@ -291,15 +291,19 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-    #icons{
-        flex-wrap: nowrap;
-        
-        .icon{
-            font-size: 16px;
-            padding: 20;
-            position: absolute;
-            width: 100%;
+    #icon-container{
+        margin-bottom: 10px;
+    
+        #icons{
+            flex-wrap: nowrap;
             
+            .icon{
+                font-size: 16px;
+                padding: 20;
+                position: absolute;
+                width: 100%;
+                
+            }
         }
     }
 }
