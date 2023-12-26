@@ -8,6 +8,8 @@
   top: 0;
   right: 0;
   z-index: 999;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 #header nav {
   display: grid;
@@ -17,6 +19,8 @@
   padding: 0.9rem;
   width: 94%;
   border-radius: 1rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 #header nav .left-icons a, #header nav .right-icons a {
   font-size: 20px;

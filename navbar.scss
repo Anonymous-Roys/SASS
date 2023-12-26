@@ -12,7 +12,7 @@ $secondary-color2: #00c3ff;
     top: 0;
     right: 0;
     z-index: 999;
-    
+    backdrop-filter: blur(3px);
 
 
     nav {
@@ -23,6 +23,7 @@ $secondary-color2: #00c3ff;
         padding: 0.9rem;
         width: 94%;
         border-radius: 1rem;
+        backdrop-filter: blur(2px);
 
         .left-icons a, .right-icons a{
             font-size: 20px;
