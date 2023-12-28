@@ -69,8 +69,10 @@ footer #footer {
   align-items: center;
 }
 footer #footer button {
-  background-color: #bbb7b7;
   border-radius: 10px;
+}
+footer #footer button:hover {
+  background-color: #034b92;
 }
 footer * {
   text-decoration: none;
@@ -282,10 +284,6 @@ body p {
 .top-product-section .top-product .top-product-item div:first-child:hover img {
   transform: scale(1.1);
 }
-.top-product-section .top-product .top-product-item p {
-  font-size: 14px;
-}
-
 /* styles.css */
 .search-container {
   text-align: center;

@@ -8,8 +8,10 @@ footer #footer {
   align-items: center;
 }
 footer #footer button {
-  background-color: #bbb7b7;
   border-radius: 10px;
+}
+footer #footer button:hover {
+  background-color: #034b92;
 }
 footer * {
   text-decoration: none;

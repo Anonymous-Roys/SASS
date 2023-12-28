@@ -7,8 +7,11 @@ footer{
             justify-content: space-around;
             align-items: center;
             button{
-                background-color:#034b92;
+                // background-color:;
                 border-radius: 10px;
+            }
+            button:hover{
+                background-color: #034b92;
             }
         }
         
