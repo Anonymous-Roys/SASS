@@ -63,21 +63,20 @@ footer {
   background: #0051A5;
   border-radius: 25px 25px 0 0;
 }
-footer #footer {
+footer #footer .right-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-footer #footer input {
+footer #footer .right-footer input {
   border-radius: 10px;
 }
-footer #footer button {
+footer #footer .right-footer button {
   background-color: #0051A5;
   border-radius: 10px;
-  display: absolute;
   top: 0;
 }
-footer #footer button:hover {
+footer #footer .right-footer button:hover {
   background-color: #1e354d;
 }
 footer * {
@@ -315,6 +314,7 @@ body p {
   #icon-container #icons .icon {
     font-size: 16px;
     padding: 20;
+    position: absolute;
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
