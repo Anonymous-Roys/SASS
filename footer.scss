@@ -2,18 +2,20 @@ footer{
     background: #0051A5;;
     border-radius: 25px 25px 0 0;
     #footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         .right-footer{
                 input{
                     border-radius: 10px;
                 }
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+               
                 button{
                     background-color: #0051A5;
                     border-radius: 10px;
-                    // display: absolute;
+                    display: absolute;
                     top: 0;
+                    left: 0;
                 }
                 button:hover{
                     background-color: #1e354d;
