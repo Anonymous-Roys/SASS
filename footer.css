@@ -7,11 +7,7 @@ footer #footer {
   justify-content: space-around;
   align-items: center;
 }
-footer #footer .right-footer input {
-  border-radius: 10px;
-}
 footer #footer .right-footer button {
-  background-color: #0051A5;
   border-radius: 10px;
   display: absolute;
   top: 0;

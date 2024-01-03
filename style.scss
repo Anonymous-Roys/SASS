@@ -1,20 +1,14 @@
-$primary-color: #0051A5;
+$primary-color: #8b8b8b;
 $secondary-color1: #bbb7b7;
-$secondary-color2: #041c24;
-
-
-
+$secondary-color2: #5c5c5c;
+$bg_color: linear-gradient(150deg, $secondary-color1, $primary-color, #fff 80%);
 @import "navbar";
-
 @import "footer";
 
-
-
-
-$bg_color: linear-gradient(150deg, $secondary-color1, $primary-color, #fff 80%);
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -56,6 +50,7 @@ body{
                     border-radius: 0.5rem;
                     padding: 4rem 4rem 2rem;
                     width: fit-content;
+
                     .btn {
                             border-radius: 1.4rem;
                             padding: 0.9rem;
@@ -135,6 +130,7 @@ body{
             }
             
         }
+
         .content1 div{
             background-color: #ffffff67;
             padding: 0.1rem 0.2rem;
