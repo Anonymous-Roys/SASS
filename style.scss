@@ -1,9 +1,11 @@
-$primary-color: #8b8b8b;
-$secondary-color1: #bbb7b7;
-$secondary-color2: #5c5c5c;
+$primary-color: #063669;
+$secondary-color1: #bbb7b75e;
+$button-color: #6e6b6b;
+$button-hover: #063669;
 $bg_color: linear-gradient(150deg, $secondary-color1, $primary-color, #fff 80%);
 @import "navbar";
 @import "footer";
+
 
 *{
     box-sizing: border-box;
@@ -28,7 +30,6 @@ body{
     }
 }
 
-
 #homepage {
         display: flex;
         justify-content: center;
@@ -38,17 +39,17 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        // height: 80vh;
+        height: 80vh;
         padding: 18% 0;
         
-    #h-container{
+    #hcontainer{
 
             #hcontent{
                     margin: 5rem 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
                     background-color: $secondary-color1;
                     border-radius: 0.5rem;
-                    padding: 4rem 4rem 2rem;
+                    padding: 1.5rem 4rem 1rem;
                     width: fit-content;
 
                     .btn {
@@ -64,8 +65,8 @@ body{
                         }
                     
                         .btn:hover {
-                            background-color: $secondary-color2;
-                            color: $primary-color;
+                            background-color: $button-hover;
+                            color: #fff;
                         }
             }
         }
@@ -91,6 +92,7 @@ body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        height: 220px;
         -webkit-mask:
                 linear-gradient(90deg,
                     transparent,
@@ -103,14 +105,16 @@ body{
                     white 40%,
                     white 60%,
                     transparent);
-        
+        padding-block: 1rem;
+        gap: 1rem;
+
         .content1{
                     margin: 0.5rem;
                     box-shadow: 9px 9px 7px #0f0f0f;
                     background-color: antiquewhite;
                     border-radius: 1rem;
                     padding: 0.5rem 1rem;
-                    max-width: 7%;
+                    max-width: 15%;
                     
 
             .btn{
@@ -119,12 +123,12 @@ body{
                 background-color: $primary-color;
                 max-width: fit-content;
                 margin: auto;
-                margin-bottom: -38px;
+                margin-bottom: -35px;
                 box-shadow: 2px 2px 4px #0f0f0f;
                 transition: all 0.5s;
                 
                 &:hover {
-                        background-color: $secondary-color2;
+                        background-color: $button-hover;
                         color: white;
                     }
             }
@@ -197,13 +201,6 @@ body{
 }
 
 
-
-.contents {
-    padding-block: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
 
 @keyframes scroll {
     to {
@@ -280,8 +277,16 @@ body{
 
 
 @media screen and (max-width: 800px) {
+    #hcontent{
+        margin: 1rem 5.5rem;
+        box-shadow: 9px 9px 7px #0f0f0f;
+        background-color: $secondary-color1;
+        border-radius: 0.5rem;
+        padding: 1rem 2rem 1rem;
+        width: fit-content;
+    }
     #icon-container{
-        margin-bottom: 16px;
+        height:39px;
     
         #icons{
             flex-wrap: nowrap;

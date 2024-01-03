@@ -68,7 +68,11 @@ footer #footer {
   justify-content: space-around;
   align-items: center;
 }
+footer #footer .right-footer input {
+  border-radius: 10px;
+}
 footer #footer .right-footer button {
+  background-color: #0051A5;
   border-radius: 10px;
   display: absolute;
   top: 0;
@@ -110,18 +114,19 @@ body p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 80vh;
   padding: 18% 0;
 }
-#homepage #h-container #hcontent {
+#homepage #hcontainer #hcontent {
   margin: 5rem 0.5rem;
   box-shadow: 9px 9px 7px #0f0f0f;
   background-color: #bbb7b7;
   border-radius: 0.5rem;
-  padding: 4rem 4rem 2rem;
+  padding: 1.5rem 4rem 1rem;
   width: -moz-fit-content;
   width: fit-content;
 }
-#homepage #h-container #hcontent .btn {
+#homepage #hcontainer #hcontent .btn {
   border-radius: 1.4rem;
   padding: 0.9rem;
   background-color: #6e6b6b;
@@ -133,9 +138,9 @@ body p {
   font-weight: 700;
   font-size: 20px;
 }
-#homepage #h-container #hcontent .btn:hover {
-  background-color: #00c3ff;
-  color: #0051A5;
+#homepage #hcontainer #hcontent .btn:hover {
+  background-color: #063669;
+  color: #fff;
 }
 
 #icons {
@@ -159,8 +164,11 @@ body p {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  height: 220px;
   -webkit-mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
   mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
+  padding-block: 1rem;
+  gap: 1rem;
 }
 .contents .content1 {
   margin: 0.5rem;
@@ -168,7 +176,7 @@ body p {
   background-color: antiquewhite;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  max-width: 7%;
+  max-width: 15%;
 }
 .contents .content1 .btn {
   border-radius: 1.4rem;
@@ -177,12 +185,12 @@ body p {
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
-  margin-bottom: -38px;
+  margin-bottom: -35px;
   box-shadow: 2px 2px 4px #0f0f0f;
   transition: all 0.5s;
 }
 .contents .content1 .btn:hover {
-  background-color: #00c3ff;
+  background-color: #063669;
   color: white;
 }
 .contents .content1 div {
@@ -236,13 +244,6 @@ body p {
   width: max-content;
   flex-wrap: nowrap;
   animation: scroll 30s linear infinite;
-}
-
-.contents {
-  padding-block: 1rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 @keyframes scroll {
@@ -303,8 +304,17 @@ body p {
 }
 
 @media screen and (max-width: 800px) {
+  #hcontent {
+    margin: 1rem 5.5rem;
+    box-shadow: 9px 9px 7px #0f0f0f;
+    background-color: #bbb7b7;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   #icon-container {
-    margin-bottom: 16px;
+    height: 39px;
   }
   #icon-container #icons {
     flex-wrap: nowrap;
