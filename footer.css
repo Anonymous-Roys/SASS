@@ -1,5 +1,5 @@
 footer {
-  background: #0051A5;
+  background: rgba(81, 82, 83, 0.8784313725);
   border-radius: 25px 25px 0 0;
 }
 footer #footer {
@@ -9,6 +9,7 @@ footer #footer {
 }
 footer #footer .right-footer input {
   border-radius: 10px;
+  color: rgb(0, 0, 0);
 }
 footer #footer .right-footer button {
   background-color: #0051A5;

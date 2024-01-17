@@ -39,7 +39,7 @@
   padding: 0px 0px 0px 5px;
 }
 #header nav .mid-icons input[type=search]:focus {
-  background-color: rgba(0, 80, 165, 0.8784313725);
+  background-color: rgba(81, 82, 83, 0.8784313725);
 }
 #header nav .mid-icons ::-moz-placeholder {
   font-size: 16px;
