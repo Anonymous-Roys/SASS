@@ -233,6 +233,9 @@ body{
             font-weight: 500;
             
         }
+        .top-product-item:hover{
+            background: #918f8f;
+        }
 
         .top-product-item div{
             width: 220px;
@@ -254,7 +257,7 @@ body{
         }
 
 
-        .top-product-item div:first-child:hover img{
+        .top-product-item:hover img{
             transform: scale(1.1);
         }
         .top-product-item p{

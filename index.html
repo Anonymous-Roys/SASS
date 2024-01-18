@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"> -->
     <script
       src="https://kit.fontawesome.com/645fc3a2e6.js"
       crossorigin="anonymous"
@@ -110,71 +111,73 @@
         <div class="container">
           <h2>Most Purchased Products</h2>
           <div class="top-product">
-            <div class="top-product-item i1">
-              <div><img src="./images/15_plus.jpeg" alt="" /></div>
+            <div class="top-product-item i1" id="i1">
+              <div>
+                <img src="./images/15_plus.jpeg" alt="" />
+              </div>
               <div>
                 <h5>Product 1</h5>
                 <p>This is the product 1</p>
               </div>
               
             </div>
-            <div class="top-product-item i2">
+            <div class="top-product-item i2" id="i2">
               <div><img src="./images/game pad.jpeg" alt="game pad" /></div>
               <div>
                 <h5>Product 2</h5>
                 <p>This is the product 2</p>
               </div>
             </div>
-            <div class="top-product-item i3">
+            <div class="top-product-item i3" id="i3">
               <div><img src="./images/iphone.jpg" alt="game pad" /></div>
               <div>
                 <h5>Product 3</h5>
                 <p>This is the product 3</p>
               </div>
             </div>
-            <div class="top-product-item i4">
+            <div class="top-product-item i4" id="i4">
               <div><img src="./images/cam_phone.jpg" alt="game pad" /></div>
               <div>
                 <h5>Product 4</h5>
                 <p>This is the product 4</p>
               </div>
             </div>
-            <div class="top-product-item i5">
+            <div class="top-product-item i5"  id="i5">
               <div><img src="./images/15_plus.jpeg" alt="" /></div>
               <div>
                 <h5>Product 5</h5>
                 <p>This is the product 5</p>
               </div>
             </div>
-            <div class="top-product-item i6">
+            <div class="top-product-item i6" id="i6">
               <div><img src="./images/game pad.jpeg" alt="game pad" /></div>
               <div>
                 <h5>Product 6</h5>
                 <p>This is the product 6</p>
               </div>
             </div>
-            <div class="top-product-item i7">
+            <div class="top-product-item i7" id="i7">
               <div><img src="./images/iphone.jpg" alt="game pad" /></div>
               <div>
                 <h5>Product 7</h5>
                 <p>This is the product 7</p>
               </div>
             </div>
-            <div class="top-product-item i8">
+            <div class="top-product-item i8" id="i8">
               <div><img src="./images/cam_phone.jpg" alt="game pad" /></div>
               <div>
                 <h5>Product 8</h5>
                 <p>This is the product 8</p>
               </div>
             </div>
-            <div class="top-product-item i9">
+            <div class="top-product-item i9" id="i9">
               <div><img src="./images/iphone.jpg" alt="game pad" /></div>
               <div>
                 <h5>Product 9</h5>
                 <p>This is the product 9</p>
               </div>
             </div>
-            <div class="top-product-item i10">
+            <div class="top-product-item i10" id="i10" onclick="showProductDetails()">
               <div><img src="./images/cam_phone.jpg" alt="game pad" /></div>
               <div>
                 <h5>Product 10</h5>
@@ -184,6 +187,10 @@
           </div>
         </div>
       </div>
+      <div class="container mt-5">
+        <H2>E - commerce</H2>
+        <div class="row" id="product-list"></div>
+    </div>
       <footer>
         <div id="footer">
           <div class="left-footer">
@@ -198,6 +205,11 @@
           </div>
         </div>
       </footer>
+      
+      <div class="product-details">
+        <div class="img"></div>
+        <div class="content"></div>
+      </div>
     <!-- <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search...">
         <button id="searchButton">Search</button>

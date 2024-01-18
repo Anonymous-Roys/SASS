@@ -80,13 +80,14 @@ footer #footer .left-footer input {
   border-radius: 8px;
   color: rgb(0, 0, 0);
   padding: 4px;
+  overflow: hidden;
 }
 footer #footer .left-footer button {
   background-color: #0051A5;
-  border-radius: 4px;
+  border-radius: 5px;
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 2.9px;
+  right: 3px;
 }
 footer #footer .left-footer button:hover {
   background-color: #1e354d;
@@ -281,6 +282,9 @@ body p {
   font-size: 18px;
   font-weight: 500;
 }
+.top-product-section .top-product .top-product-item:hover {
+  background: #918f8f;
+}
 .top-product-section .top-product .top-product-item div {
   width: 220px;
   border-radius: 5px;
@@ -294,7 +298,7 @@ body p {
   position: relative;
   overflow: hidden;
 }
-.top-product-section .top-product .top-product-item div:first-child:hover img {
+.top-product-section .top-product .top-product-item:hover img {
   transform: scale(1.1);
 }
 .top-product-section .top-product .top-product-item p {
