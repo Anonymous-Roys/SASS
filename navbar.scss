@@ -31,7 +31,9 @@ $secondary-color2: #00c3ff;
             text-decoration: none;
             color: #0f0f0f;
         }
-        
+        .left-icons a:hover{
+            color: #464444fd;
+        }
         .mid-icons{
             input[type="search"]{
                 border-radius: 0.5rem;

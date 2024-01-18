@@ -28,6 +28,9 @@
   text-decoration: none;
   color: #0f0f0f;
 }
+#header nav .left-icons a:hover {
+  color: rgba(70, 68, 68, 0.9921568627);
+}
 #header nav .mid-icons input[type=search] {
   border-radius: 0.5rem;
   height: 30px;

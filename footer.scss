@@ -3,33 +3,41 @@ footer{
     border-radius: 25px 25px 0 0;
     #footer {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        .right-footer{
+        flex-wrap: wrap;
+        padding: 15px;
+        .left-footer{
+            position: relative;
                 input{
-                    border-radius: 10px;
+                    border-radius: 8px;
                     color: rgb(0, 0, 0);
+                    padding: 4px;
                 }
                
                 button{
                     background-color: #0051A5;
-                    border-radius: 10px;
-                    display: absolute;
-                    top: 0;
-                    left: 0;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 2px;
+                    right: 1.8px;
+                    
                 }
                 button:hover{
                     background-color: #1e354d;
                 }
             }
+            .right-footer{
+                
+                a{
+                    text-decoration: none;
+                // font-size: 16px;
+                    font-weight: 200;
+                    color: rgb(143, 137, 137);
+                }
+            }
         }
         
-        *{
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: 500;
-            color: white;
-        }
 }
 
 
